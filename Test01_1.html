@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Test01_1</title>
+<script type="text/javascript">
+	function Main(){
+		var btn = document.getElementById('btnAdd');
+			btn.onclick = function()
+			{
+				var val1 = document.getElementById('txtFirst').value;
+					var val2 = document.getElementById('txtSecond').value;
+			
+						val1 = Number(val1);
+            			val2 = Number(val2);
+
+	//Write your logic here
+				var addval; 
+				addval = val1 + val2;
+				document.getElementById('txtResult').value = addval;
+			}
+	
+	}
+	
+	
+</script>
+
+</head>
+<body onload="Main();">
+	
+	First:<input type="text" id="txtFirst"> <br>
+	Second:<input type="text" id="txtSecond"> <br>
+	<button id="btnAdd">Add</button> <br>
+	Result:<input type="text" id="txtResult">
+</body>
+</html>
